@@ -1,1 +1,23 @@
+#Lock
 
+$nomention
+$onlyPerms[managechannels;<:RemBlackList:1238323968767819857> | Te faltan permisos.]
+$onlyBotPerms[managechannels;<:RemBlackList:1238323968767819857> | Me faltan permisos.]
+
+$modifyChannelPerms[$mentionedChannels[1;yes];-sendmessages;$guildID]
+$description[🔒 <@$authorID>: <#$mentionedChannels[1;yes]> Canal Cerrado.]
+
+$color[#FF0000]
+$footer[Acción realizada por: $username | $addTimestamp]
+
+#Unlock
+
+$nomention
+$onlyPerms[managechannels;<:RemBlackList:1238323968767819857> | Te faltan permisos.]
+$onlyBotPerms[managechannels;<:RemBlackList:1238323968767819857> | Me faltan permisos.]
+
+$modifyChannelPerms[$mentionedChannels[1;yes];+sendmessages;$guildID]
+$description[🔓 <@$authorID>: <#$mentionedChannels[1;yes]> Canal Abierto.]
+
+$color[#FF0000]
+$footer[Acción realizada por: $username | $addTimestamp]
